@@ -13,11 +13,13 @@ from telegram.error import NetworkError
 # Fix event loop issues in Jupyter Notebook
 nest_asyncio.apply()
 
+
 # Define model paths
 MODEL_PATH = "/root/veri_ai/Veri-Ai-Bot/veri_ai_bot/ai_human_distinguish/models/ResNet50V2-AIvsHumanGenImages.keras"
 
 # Load model
 ai_detection_model = load_model(MODEL_PATH)
+
 
 # Class labels
 AI_DETECTION_LABELS = ["Human-Created", "AI-Generated"]
