@@ -14,7 +14,7 @@ from telegram.error import NetworkError
 nest_asyncio.apply()
 
 # Model path - only AI detection now
-AI_DETECTION_MODEL_PATH = r"C:\Users\User\Desktop\veri_ai_bot\ai_human_distinguish\models\ResNet50V2-AIvsHumanGenImages.keras"
+AI_DETECTION_MODEL_PATH = r"C:\Users\User\Desktop\DATA SCIENCE\Github\Veri-Ai-Bot\veri_ai_bot\ai_human_distinguish\models\ResNet50V2-AIvsHumanGenImages.keras"
 
 # Load model
 ai_detection_model = load_model(AI_DETECTION_MODEL_PATH)
@@ -125,7 +125,7 @@ async def text_handler(update: Update, context: CallbackContext) -> None:
     )
 
 async def main():
-    TOKEN = "7641667689:AAEa3hFYa-F5Q9OG6p2c5dpcuFYF9WayCqg"
+    TOKEN = "8198710095:AAElcwkTbIQibPRSvR4piOK2EvaegpXTXcI"
     application = Application.builder().token(TOKEN).build()
     
     # Add command handlers

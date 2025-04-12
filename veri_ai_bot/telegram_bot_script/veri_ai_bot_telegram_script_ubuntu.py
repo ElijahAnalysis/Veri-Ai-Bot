@@ -127,7 +127,7 @@ async def text_handler(update: Update, context: CallbackContext) -> None:
     )
 
 async def main():
-    TOKEN = "7641667689:AAEa3hFYa-F5Q9OG6p2c5dpcuFYF9WayCqg"
+    TOKEN = "8198710095:AAElcwkTbIQibPRSvR4piOK2EvaegpXTXcI"
     application = Application.builder().token(TOKEN).build()
     
     # Add command handlers

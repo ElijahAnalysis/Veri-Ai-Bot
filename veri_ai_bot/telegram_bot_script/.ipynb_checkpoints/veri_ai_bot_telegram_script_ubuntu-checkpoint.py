@@ -13,11 +13,13 @@ from telegram.error import NetworkError
 # Fix event loop issues in Jupyter Notebook
 nest_asyncio.apply()
 
+
 # Define model paths
 MODEL_PATH = "/root/veri_ai/Veri-Ai-Bot/veri_ai_bot/ai_human_distinguish/models/ResNet50V2-AIvsHumanGenImages.keras"
 
 # Load model
 ai_detection_model = load_model(MODEL_PATH)
+
 
 # Class labels
 AI_DETECTION_LABELS = ["Human-Created", "AI-Generated"]
@@ -125,7 +127,7 @@ async def text_handler(update: Update, context: CallbackContext) -> None:
     )
 
 async def main():
-    TOKEN = "7641667689:AAEa3hFYa-F5Q9OG6p2c5dpcuFYF9WayCqg"
+    TOKEN = "8198710095:AAElcwkTbIQibPRSvR4piOK2EvaegpXTXcI"
     application = Application.builder().token(TOKEN).build()
     
     # Add command handlers
